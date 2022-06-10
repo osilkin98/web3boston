@@ -19,7 +19,7 @@ const Tile = (props: TileProps) => {
 };
 
 function App() {
-  const header3Style = "font-sans text-2xl";
+  const header3Style = "font-sans text-2xl font-semibold";
   const linkStyle = "hover:text-black hover:bg-white px-1 rounded-sm";
   return (
     <div className="App bg-scroll">
@@ -27,7 +27,9 @@ function App() {
         {/* header */}
         <div className="py-8 border-b-2 mx-16">
           {/* FIXME: better font */}
-          <h1 className="text-white font-sans text-6xl font-semibold">Web3B</h1>
+          <h1 className="text-white font-sans text-6xl font-extrabold">
+            Web3B
+          </h1>
           <h2 className="text-white font-sans text-2xl pt-2">
             Boston WeB3 Builders{" "}
           </h2>
@@ -82,7 +84,8 @@ function App() {
             <div className="pl-4">
               <ul className="list-disc">
                 <li className="">
-                  <a className={linkStyle} href="https://discord.gg/web3b">
+                  {/* OPTIMIZE: create a dynamic way to load these in case of link changes */}
+                  <a className={linkStyle} href="https://discord.gg/TPzf2NH5Wm">
                     Discord
                   </a>
                 </li>
