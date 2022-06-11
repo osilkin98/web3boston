@@ -19,6 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:ipfs": "react-scripts build && ipfs add build --recursive",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
